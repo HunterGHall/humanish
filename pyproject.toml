@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "humanish"
+version = "1.0.0"
+description = "Detect a file's real format from its bytes and read a human-readable summary of its contents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Hunter Hall", email = "hunter.hall.hgh@gmail.com" }]
+keywords = ["file-format", "magic-bytes", "file-type", "detection", "metadata"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/hunterhall/humanish"
+Repository = "https://github.com/hunterhall/humanish"
+
+[project.scripts]
+humanish = "humanish.humanish:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/humanish"]
