@@ -9,7 +9,7 @@ MP4. Pure standard library, no dependencies.
 ## Install
 
 ```bash
-pip install git+https://github.com/hunterhall/humanish.git
+pip install humanish
 ```
 
 ## Usage
